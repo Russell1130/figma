@@ -1,0 +1,284 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  width: 1980px;
+  height: 6200px;
+  background: #141518;
+}
+
+.logo {
+  position: absolute;
+  width: 383px;
+  height: 109px;
+  left: 50px;
+  top:20px;
+}
+
+.logo-flex {
+  display:flex;
+}
+
+.logo-text {
+  font-family: 'Graphik Trial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  margin:0px;
+  /* or 159% */
+
+
+  background: linear-gradient(0deg, #8C8A8A, #8C8A8A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  position: relative;
+  width:951px;
+  height:150px;
+  left:450px;
+  top:80px;
+}
+
+.navbar > div > button {
+  margin-right: 50px;
+  border: none;
+  color: white;
+  background:transparent;
+  cursor:pointer;
+}
+
+.sign {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 60px;
+  right: 0px;
+}
+
+.signup {
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  right: 130px;
+
+  font-size: large;
+}
+
+.signin {
+  color: black !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  right: 0px;
+  background: #CAFC01 !important;
+  border-radius: 49px;
+  
+  font-size: large;
+}
+
+.advert {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  left: 100px;
+}
+
+.advert > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.soci {
+  color: #CAFC01;
+}
+
+.crypto {
+  color: white;
+  font-size: 50px;
+}
+
+.monkey {
+  color:antiquewhite;
+  border-left:3px solid #CAFC01;
+  padding-left: 10px;
+  line-height: 30px;
+  width:80%;
+}
+
+.MF {
+  position: relative;
+  width: 600px;
+  top: -80px;
+}
+
+.secure {
+
+  position: absolute;
+  z-index: 3;
+  width: 200px;
+  height: 80px;
+  right: 0px;
+  top:100px;
+  background: #CAFC01 !important;
+  border-radius: 10px;
+  
+  font-size: large;
+
+  display: flex;
+  color: black !important;
+}
+
+.secure-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.market {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 0;
+  right:20%;
+  top:220px;
+  width:250px;
+  height:400px;
+  background-color: #606166;
+  
+  padding: 20px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.market > div {
+  display: flex;
+  border-bottom: solid;
+  border-bottom-color: white;
+  border-width: thin;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sma {
+  color: gainsboro;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.yel {
+  color: gainsboro;
+  margin: 10px;
+  font-size: 12px;
+  color: yellow;
+}
+
+.big {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.wallet {
+  color: black !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+  width: 160px;
+  height: 60px;
+  left: 10%;
+  background: #CAFC01 !important;
+  border-radius: 49px;
+  
+  font-size: large;
+}
+
+.wallets {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  right:10%;
+  top:500px;
+  width:200px;
+  height:200px;
+  background-color: #606166;
+  
+  padding: 20px;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+.wallets > div {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.bitcoin {
+  display: flex;
+  padding-left: 23%;
+}
+
+.socialexchange {
+  color: white;
+  padding-left: 23%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.monkeyfinance {
+  color: white;
+  padding-left: 35%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.portfolio {
+  display: flex;
+  padding-left: 27%;
+}
+
+.portfolio > img {
+  margin: 10px;
+}
+
+.oneclick {
+  color: white;
+  padding-left: 27%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.becomea {
+  color: white;
+  padding-left: 30%;
+  font-size: 10px;
+  font-weight: bold;
+}
