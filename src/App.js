@@ -222,12 +222,51 @@ function App() {
           <img src="../google.png" className='google'></img>
           <img src="../app.png" className='google'></img>
         </div>
-        <div className='getstarted'>
-          <div className='smtxt'>Ready to start trading cryptocurrency?</div>
-          <div className='lgtxt'>Be part of our beta testing group and earn up to $100! </div>
-          <div className='email' style={{display:"flex", flexDirection:"row"}}>
-            <div style={{padding:"15px"}}>Enter your email address</div>
-            <button>Get Started</button>
+      </div>
+      
+      <div className='getstarted'>
+        <div className='smtxt'>Ready to start trading cryptocurrency?</div>
+        <div className='lgtxt'>Be part of our beta testing group and earn up to $100! </div>
+        <br/>
+        <div className='email' style={{display:"flex", flexDirection:"row"}}>
+          <div style={{paddingLeft:"30px", paddingTop:"15px", paddingBottom:"15px"}}>Enter your email address</div>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div className='footer'>
+        <div style={{display:"flex", flexDirection:"column", paddingRight:"100px"}}>
+          <img src="../part1.png"></img>
+          <img src="../part1-2.png" style={{padding:"50px"}}></img>
+        </div>
+        <div style={{display:"flex", flexDirection:"column", paddingLeft:"20px"}}>
+          <div className='smtxt' style={{textAlign:"left", alignSelf:"auto"}}>Quick Links</div>
+          <div style={{display:"flex", flexDirection:"row"}}>
+            <div style={{display:"flex", flexDirection:"column"}} className='quick'>
+              <div>Buy/Sell</div>
+              <div>Trade Now</div>
+              <div>Wallet</div>
+            </div>
+            <div style={{display:"flex", flexDirection:"column"}} className='quick'>
+              <div>My Chat</div>
+              <div>LitePaper</div>
+            </div>
+          </div>
+        </div>
+        <div style={{display:"flex", flexDirection:"column", paddingLeft:"20px"}}>
+          <div className='smtxt' style={{textAlign:"left", alignSelf:"auto"}}>Submit for updates</div>
+          <div className='quick w70'  style={{paddingBottom:"15px"}}>Subscribe to get the latest updates from our exchange!</div>
+          <div className='submit w70' style={{display:"flex", flexDirection:"row"}}>
+            <div style={{paddingTop:"15px", paddingBottom:"15px"}}>Enter your email address</div>
+            <button>&nbsp;&nbsp;&nbsp;Send&nbsp;&nbsp;&nbsp;</button>
+          </div>
+        </div>
+      </div>
+      <div className='copyright'>
+        <div style={{display:"flex", flexDirection:'row', width:"100%"}}>
+          <div style={{width:"80%", paddingLeft:"12%"}}>MonkeyFi&nbsp;&nbsp;&nbsp;.All rights reserved.</div>
+          <div style={{width:"40%", display:"flex", flexDirection:'row'}}>
+            <div style={{paddingLeft:"20px", paddingRight:"20px"}}>Term of Service</div>|
+            <div style={{paddingLeft:"20px", paddingRight:"20px"}}>Privacy Policy</div>
           </div>
         </div>
       </div>
