@@ -178,7 +178,8 @@ function App() {
         <br/>
         <button>Buy Now</button>
       </div>
-      <div className='smtxt'>We accept payment with many methods:</div>
+      <img src="../visa.png" className="visa"></img>
+      <div className='smtxt' style={{paddingTop:"100px"}}>We accept payment with many methods:</div>
       <img src="../Payment.png" style={{alignSelf:"center", width:"30%"}}></img>
       <div className='lgtxt w60'>Crypto education, awareness and inclusivity to Latin America and the rest of the world</div>
       <div className='smtxt w40'>We believe MonkeyFi is here to stay — and that a future worth building is one which opens its doors and invites everyone in.</div>
@@ -220,6 +221,14 @@ function App() {
         <div style={{display:"flex", alignSelf:"center"}}>
           <img src="../google.png" className='google'></img>
           <img src="../app.png" className='google'></img>
+        </div>
+        <div className='getstarted'>
+          <div className='smtxt'>Ready to start trading cryptocurrency?</div>
+          <div className='lgtxt'>Be part of our beta testing group and earn up to $100! </div>
+          <div className='email' style={{display:"flex", flexDirection:"row"}}>
+            <div style={{padding:"15px"}}>Enter your email address</div>
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
     </div>
