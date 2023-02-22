@@ -17,28 +17,28 @@ function App() {
             <p className="logo-text">Crypto made easy</p>
           </div>
         </div>
-      </div>
-
-      <div className='navbar'>
-        <div style={{display:"flex"}}>
-          <button onClick={butClick.bind(this)}>About us</button>
-          <button>Wallet</button>
-          <button>Markets</button>
-          <button>My Chat</button>
-          <button>LitePaper</button>
+        <div className='navbar'>
+          <div style={{display:"flex"}}>
+            <button onClick={butClick.bind(this)}>About us</button>
+            <button>Wallet</button>
+            <button>Markets</button>
+            <button>My Chat</button>
+            <button>LitePaper</button>
+          </div>
         </div>
         <div style={{display:"flex"}} className="sign">
           <button className='signup'>Sign Up</button>
           <button className='signin'>Sign in</button>
-          <button className='secure'>
-            <img src="../Vector.png" style={{margin:"10px", alignSelf:"center",width:"15%", height:"50%"}}></img>
-            <div className="secure-flex">
-              <p style={{height:"5px", marginBlockEnd:"0px", fontWeight:"bold"}}>100% Secure</p>
-              <p style={{fontSize:"10px", marginBlockStart:"15px"}}>Your funds are safe!</p>
-            </div>
-          </button>
         </div>
       </div>
+
+      <button className='secure'>
+        <img src="../Vector.png" style={{margin:"10px", alignSelf:"center",width:"15%", height:"50%"}}></img>
+        <div className="secure-flex">
+          <p style={{height:"5px", marginBlockEnd:"0px", fontWeight:"bold"}}>100% Secure</p>
+          <p style={{fontSize:"10px", marginBlockStart:"15px"}}>Your funds are safe!</p>
+        </div>
+      </button>
 
       <div style={{display:"flex"}}>
         <div className='advert'>
@@ -117,7 +117,7 @@ function App() {
         </div>
         <button className='wallet'>Claim Rewards</button>
       </div>
-      <div>
+      <div style={{display:"flex", flexDirection:"column"}}>
         <div className='bitcoin'>
           <img src="../usd.png"></img>
           <img src="../usd.png"></img>
@@ -135,16 +135,51 @@ function App() {
         </div>
       </div>
       <br/><br/>
-      <p className="socialexchange">The first-ever social exchange, because centralized exchanges don’t have to be boring!</p>
-      <p className="monkeyfinance">Monkey Finance has a variety of features that make it the best place to start trading</p>
+      <div className="lgtxt">The first-ever social exchange, because centralized exchanges don’t have to be boring!</div>
+      <div className="smtxt">Monkey Finance has a variety of features that make it the best place to start trading</div>
       <div className='portfolio'>
         <img src="../portfolio.png"></img>
         <img src="../portfolio.png" style={{position:"relative", top:"40px"}}></img>
         <img src="../portfolio.png"></img>
       </div>
       <br/><br/>
-      <p className="oneclick">One click, instant payout with credit or debit card.</p>
-      <p className="becomea">Become a crypto owner in minutes using your debit or credit card and quickly purchase top cryptocurrencies.</p>
+      <div className="lgtxt">One click, instant payout with credit or debit card.</div>
+      <div className="smtxt">Become a crypto owner in minutes using your debit or credit card and quickly purchase top cryptocurrencies.</div>
+      <br/>
+      <div className='buynow'>
+        <div style={{display:"flex"}}>
+          <button className='signup' style={{color:"#CAFC01"}}>Buy</button>|
+          <button className='signup'>Sell</button>
+        </div>
+        <div>1 BTC is roughly</div>
+        <div>20,073.27 USD</div>
+        <img src="../Form.png"></img><br/>
+        <img src="../Form1.png"></img>
+        <br/>
+        <button>Buy Now</button>
+      </div>
+      <div className='smtxt'>We accept payment with many methods:</div>
+      <img src="../Payment.png" style={{alignSelf:"center", width:"30%"}}></img>
+      <div className='lgtxt'>Crypto education, awareness and inclusivity to Latin America and the rest of the world</div>
+      <div className='smtxt'>We believe MonkeyFi is here to stay — and that a future worth building is one which opens its doors and invites everyone in.</div>
+      <div style={{display:"flex", paddingTop:"20px", alignSelf:"center"}}>
+        <div style={{display:"flex", flexDirection:"column", width:"200px"}}>
+          <img src="../Clarify.png" style={{width:"30%", alignSelf:"center"}}></img>
+          <div className='lgtxt'>Clarify</div>
+          <div className='smtxt'>We help you make sense of the coins, the terms, the dense charts and market changes.</div>
+        </div>
+        <div style={{display:"flex", flexDirection:"column", width:"200px"}}>
+          <img src="../Confidence.png" style={{width:"30%", alignSelf:"center"}}></img>
+          <div className='lgtxt'>Confidence</div>
+          <div className='smtxt'>Our markets are always up to date, sparking curiosity with real-world relevance.</div>
+        </div>
+        <div style={{display:"flex", flexDirection:"column", width:"200px"}}>
+          <img src="../Community.png" style={{width:"30%", alignSelf:"center"}}></img>
+          <div className='lgtxt'>Community</div>
+          <div className='smtxt'>We support the crypto community, putting data in the hands which need it most.</div>
+        </div>
+      </div>
+      <div className='lgtxt'>What the media will say about MonkeyFi?</div>
     </div>
   );
 }
