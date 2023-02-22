@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 100px;
   width: 100%;
   height: 6200px;
   background: #141518;
@@ -47,47 +48,32 @@
 
 .navbar > div > button {
   border: none;
-  margin: auto;
   color: white;
   background:transparent;
   cursor:pointer;
-  padding-left: 50px;
-}
-
-.sign {
-  position: relative;
-  z-index: 1;
-  padding-right: 10%;
-  height: 50px;
-}
-
-.signup {
-  border: none;
-  color: white;
-  background:transparent;
-  cursor:pointer;
-  width: 50%;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .signin {
   color: black !important;
-  width: 130px;
   background: #CAFC01 !important;
-  border-radius: 30px;
-  
-  font-size: large;
+  border-radius: 50px;
+  cursor:pointer;
+  font-size: medium;
 }
 
 .advert {
   position: relative;
-  width: 450px;
+  padding-top: 90px;
+  width: 550px;
   height: 450px;
   left: 100px;
 }
 
-.advert > p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.advert > div {
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 
 .soci {
@@ -96,20 +82,21 @@
 
 .crypto {
   color: white;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .monkey {
   color:antiquewhite;
   border-left:3px solid #CAFC01;
   padding-left: 10px;
-  line-height: 30px;
-  width:80%;
+  width:100%;
+  font-size: 25px;
 }
 
 .MF {
   position: relative;
-  width: 600px;
+  left:-80px;
+  width: 900px;
 }
 
 .secure {
@@ -117,15 +104,14 @@
   position: absolute;
   z-index: 3;
   width: 200px;
-  right: 5%;
+  right: 8%;
   top:200px;
   background: #CAFC01 !important;
   border-radius: 10px;
   
   font-size: large;
-
   display: flex;
-  color: black !important;
+  border: none;
 }
 
 .secure-flex {
@@ -140,10 +126,9 @@
   flex-direction: column;
   position: absolute;
   z-index: 0;
-  right:10%;
-  top:220px;
+  right:15%;
+  top:180px;
   width:250px;
-  height:400px;
   background-color: #606166;
   
   padding: 20px;
@@ -157,6 +142,7 @@
   border-bottom-color: white;
   border-width: thin;
   padding-top: 5px;
+  height: 60px;
   padding-bottom: 5px;
 }
 
@@ -183,13 +169,14 @@
 .wallet {
   color: black !important;
   position: relative;
-  width: 160px;
-  height: 60px;
+  width: 200px;
+  height: 80px;
   left: 10%;
   background: #CAFC01 !important;
   border-radius: 49px;
-  
+  cursor: pointer;
   font-size: large;
+  border: none;
 }
 
 .wallets {
@@ -197,13 +184,13 @@
   flex-direction: column;
   position: absolute;
   z-index: 1;
-  right:5%;
-  top:500px;
-  width:200px;
-  height:200px;
+  right:12%;
+  top:400px;
+  width:230px;
+  height:170px;
   background-color: #606166;
   
-  padding: 20px;
+  padding: 30px;
   opacity: 0.9;
   border-radius: 20px;
 }
@@ -215,35 +202,41 @@
 }
 
 .bitcoin {
-  width: 645px;
+  width: 1200px;
   align-self: center;
 }
 
+.bitcoin > img {
+  width:33%;
+}
+
 .portfolio {
-  width: 645px;
+  width: 1200px;
   align-self: center;
 }
 
 .portfolio > img {
-  margin: 10px;
+  width: 33%;
 }
 
 .lgtxt {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
-  width: 450px;
   align-self: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .smtxt {
   color: white;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  align-self: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .buynow {
@@ -252,7 +245,7 @@
   position: relative;
   align-self: center;
   z-index: 0;
-  width:250px;
+  width:400px;
   background-color: #313235;
 
   padding: 20px;
@@ -275,4 +268,101 @@
   background: linear-gradient(265.56deg, #CAFC01 -0.27%, #CAFC01 49.16%, #34A948 98.59%);
   box-shadow: 0px 0px 15px #CAFC01;
   cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative; 
+  align-self: center;
+  width: auto;
+  height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+  align-self: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  align-self: center;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+  left: -50px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mobile-container {
+  align-self: center;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mybut {
+  border: none;
+  color: white;
+  background:transparent;
+  cursor:pointer;
+  width: 50%;
+}
+
+.google {
+  color: white !important;
+  width: 250px;
+  background:transparent;
+  border-radius: 30px;
+  border-color: white;
+  cursor:pointer;
+  font-size: large;
+}
+
+.w80 {
+  width:80%;
+}
+
+.w70 {
+  width:70%;
+}
+
+.w60 {
+  width:60%;
+}
+
+.w50 {
+  width:50%;
+}
+
+.w40 {
+  width:40%;
+}
+
+.w30 {
+  width:30%;
 }
